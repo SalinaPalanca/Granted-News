@@ -10,8 +10,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardElevation="4dp"
-    app:cardCornerRadius="4dp"
-    android:padding="10dp">
+    app:cardCornerRadius="10dp">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -21,13 +20,20 @@
    <ImageView
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+       android:scaleType="centerCrop"
+       android:src="@drawable/img"
        android:id="@+id/image"/>
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Title"
+        android:padding="10dp"
         android:textSize="20dp"
         android:fontFamily="@font/g_bold"
         android:textColor="@color/white"
@@ -36,23 +42,29 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_gravity="bottom">
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Source"
-                android:textSize="20dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:ems="15"
                 android:fontFamily="@font/g_light"
                 android:textColor="@color/white"
                 android:id="@+id/tvSource"/>
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Date"
-                android:textSize="20dp"
+                android:padding="10dp"
+                android:gravity="right"
+                android:textSize="16dp"
                 android:fontFamily="@font/g_light"
                 android:textColor="@color/white"
                 android:id="@+id/tvDate"/>
