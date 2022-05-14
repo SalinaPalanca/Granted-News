@@ -10,6 +10,5 @@
 
 
     <color name="grey">#eeefee</color>
-    <color name="black" tools:ignore="DuplicateDefinition">#191819</color>
-    <color name="white" tools:ignore="DuplicateDefinition">#f7f6f9</color>
+
 </resources>
