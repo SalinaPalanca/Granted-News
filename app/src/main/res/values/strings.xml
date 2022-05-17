@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">News Granted</string>
+    <string name="granted_news">GRANTED NEWS</string>
 </resources>
