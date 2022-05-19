@@ -35,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:hint="Search"
+            android:fontFamily="@font/g_bold"
             android:padding="10dp"
             android:textColor="@color/grey"
             android:layout_column="0"
@@ -58,7 +59,7 @@
     </GridLayout>
 
 
-
+    
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
