@@ -71,7 +71,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             imageView = itemView.findViewById(R.id.image);
             cardView = itemView.findViewById(R.id.cardView);
 
-        }
+         }
     }
     public String datetime(String t){
         PrettyTime prettyTime = new PrettyTime(new Locale(getCountry()));

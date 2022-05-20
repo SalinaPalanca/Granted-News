@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(retrofit2.Call<Headlines> call, Throwable t) {
 
-            }
+             }
         });
     }
 
