@@ -18,7 +18,6 @@ public class Articles {
     @Expose
     private String title;
 
-
     @SerializedName("description")
     @Expose
     private String description;

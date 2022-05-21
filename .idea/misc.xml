@@ -3,13 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Allen/AndroidStudioProjects/Granted-News/app/src/main/res/drawable/gradient.xml" value="0.165" />
+        <entry key="..\:/Users/Allen/AndroidStudioProjects/Granted-News/app/src/main/res/layout/activity_detailed.xml" value="0.3359375" />
         <entry key="..\:/Users/Allen/AndroidStudioProjects/Granted-News/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Allen/AndroidStudioProjects/Granted-News/app/src/main/res/layout/items.xml" value="0.15729166666666666" />
-        <entry key="..\:/Users/Biana/Desktop/Capstone/app/src/main/res/drawable/black_background.xml" value="0.2465" />
-        <entry key="..\:/Users/Biana/Desktop/Capstone/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/Biana/Desktop/Capstone/app/src/main/res/layout/activity_splash_screen.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/Biana/Desktop/Thesis/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/Biana/Desktop/Thesis/app/src/main/res/layout/activity_splash_screen.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Desktoptify/Documents/Granted-News/app/src/main/res/drawable/gradient.xml" value="0.18" />
         <entry key="..\:/Users/Desktoptify/Documents/Granted-News/app/src/main/res/layout/activity_main.xml" value="0.27851458885941643" />
         <entry key="..\:/Users/Desktoptify/Documents/Granted-News/app/src/main/res/layout/items.xml" value="0.36666666666666664" />
@@ -22,18 +19,6 @@
         <entry key="..\:/Users/Desktoptify/Documents/NewsGranted2/app/src/main/res/drawable/purple_background.xml" value="0.1" />
         <entry key="..\:/Users/Desktoptify/Documents/NewsGranted2/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Desktoptify/Documents/NewsGranted2/app/src/main/res/layout/items.xml" value="0.33" />
-        <entry key="..\:/Users/Desktoptify/Documents/eijfrbg/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.223" />
-        <entry key="..\:/Users/Desktoptify/Documents/eijfrbg/app/src/main/res/drawable/black_background.xml" value="0.25" />
-        <entry key="..\:/Users/Desktoptify/Documents/eijfrbg/app/src/main/res/drawable/gradient.xml" value="0.18" />
-        <entry key="..\:/Users/Desktoptify/Documents/eijfrbg/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.18" />
-        <entry key="..\:/Users/Desktoptify/Documents/eijfrbg/app/src/main/res/drawable/ic_launcher_background.xml" value="0.223" />
-        <entry key="..\:/Users/Desktoptify/Documents/eijfrbg/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Desktoptify/Documents/eijfrbg/app/src/main/res/layout/items.xml" value="0.36102564102564105" />
-        <entry key="..\:/Users/LICENSE/AndroidStudioProjects/Granted-News/app/src/main/res/drawable/black_background.xml" value="0.2985" />
-        <entry key="..\:/Users/LICENSE/AndroidStudioProjects/Granted-News/app/src/main/res/drawable/gradient.xml" value="0.2985" />
-        <entry key="..\:/Users/LICENSE/AndroidStudioProjects/Granted-News/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/LICENSE/AndroidStudioProjects/Granted-News/app/src/main/res/layout/activity_splash_screen.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/LICENSE/AndroidStudioProjects/Granted-News/app/src/main/res/layout/items.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

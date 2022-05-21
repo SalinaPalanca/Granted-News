@@ -1,6 +1,7 @@
 package com.example.newsgranted;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,7 +48,23 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.tvSource.setText(a.getSource().getName());
         holder.tvDate.setText("\u2022"+datetime(a.getPublishedAt()));
 
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,Detailed.class);
+                intent.putExtra("title",a.getTitle());
+                intent.putExtra("source",a.getSource().getName());
+                intent.putExtra("time",datetime(a.getPublishedAt()));
+                intent.putExtra("desc",a.getDescription());
+                intent.putExtra("imageUrl",a.getUrlToImage());
+                intent.putExtra("url",a.getUrl());
+                context.startActivity(intent);
+            }
+        });
+
         String imageUrl = a.getUrlToImage();
+        String url = a.getUrl();
+
 
         Picasso.with(context).load(imageUrl).into(holder.imageView);
     }
