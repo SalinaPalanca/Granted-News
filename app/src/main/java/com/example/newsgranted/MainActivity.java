@@ -3,10 +3,13 @@ package com.example.newsgranted;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 import com.example.newsgranted.Model.Articles;
@@ -22,6 +25,7 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
+    SwipeRefreshLayout swipeRefreshLayout;
     EditText etQuery;
     Button btnSearch;
     final String API_KEY = "6ef96dd7b2d24414b60801c38b075d68";
@@ -33,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        swipeRefreshLayout = findViewById(R.id.swipeRefresh);
+        recyclerView = findViewById(R.id.recyclerView);
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         final String country = getCountry();
@@ -40,18 +47,28 @@ public class MainActivity extends AppCompatActivity {
         etQuery = findViewById(R.id.etQuery);
         btnSearch = findViewById(R.id.btnSearch);
 
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                retrieveJson(country, API_KEY);
+            }
+        });
+
+
         retrieveJson(country,API_KEY);
 
     }
 
     public void retrieveJson(String country, String apiKey) {
 
+        swipeRefreshLayout.setRefreshing(true);
         retrofit2.Call<Headlines> call = ApiClient.getInstance().getApi().getHeadlines(country,apiKey);
         call.enqueue(new Callback<Headlines>() {
             @Override
             public void onResponse(retrofit2.Call<Headlines> call, Response<Headlines> response) {
                 if (response.isSuccessful() && response.body().getArticles() !=null) {
-                    articles.clear();
+                    swipeRefreshLayout.setRefreshing(false);
+                     articles.clear();
                     articles = response.body().getArticles();
                     adapter = new Adapter(MainActivity.this, articles);
                     recyclerView.setAdapter(adapter);
@@ -60,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(retrofit2.Call<Headlines> call, Throwable t) {
+
+                swipeRefreshLayout.setRefreshing(false);
+                Toast.makeText(MainActivity.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
 
              }
         });
