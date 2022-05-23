@@ -18,7 +18,15 @@
         android:layout_height="200dp">
 
 
-   <ImageView
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/loader"/>
+
+
+        <ImageView
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:scaleType="centerCrop"

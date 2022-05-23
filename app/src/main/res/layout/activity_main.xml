@@ -43,7 +43,7 @@
             android:background="@drawable/black_background"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Search" />
+            />
 
         <Button
             android:id="@+id/btnSearch"
