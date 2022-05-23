@@ -11,8 +11,15 @@ public interface ApiInterface {
 
     @GET("Top-headlines")
     Call<Headlines> getHeadlines(
-        @Query("Country") String country,
-        @Query("apikey") String apikey
+        @Query("country") String country,
+        @Query("apiKey") String apiKey
+
+    );
+
+    @GET("everything")
+    Call<Headlines> getSpecificData(
+            @Query("q") String query,
+            @Query("apiKey") String apiKey
 
     );
 }
